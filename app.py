@@ -1,9 +1,8 @@
-# 文件名稱：app.py (包含單一查詢和比較功能)
 import streamlit as st
-import crawlptt       # 爬蟲程式
-import analy          # PTT 評論分析程式
-import excel_tool     # Excel 成績查詢程式
-import crawlpttcontent # 匯入文章內容爬蟲
+import crawlptt       
+import analy          
+import excel_tool     
+import crawlpttcontent 
 import time 
 import requests 
 import pandas as pd
@@ -231,4 +230,5 @@ if st.button("🔍 開始查詢或比較"):
             if prof2_data:
                 st.markdown("---") # 分隔線
                 st.subheader(f"📝 『{prof2_name}』教授成績資訊 (比較對象)")
+
                 st.text(prof2_data['grade_msg'])
