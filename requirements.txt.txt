@@ -1,9 +1,0 @@
-streamlit
-requests
-beautifulsoup4
-pandas
-numpy
-tabulate
-openpyxl
-lxml
-html5lib
